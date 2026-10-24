@@ -37,7 +37,7 @@ h1 em{font-style:normal;color:var(--skin)}h1 span{color:var(--gut)}
 .door{position:relative;border-radius:20px;overflow:hidden;min-height:430px;color:#fff;display:flex;flex-direction:column;justify-content:flex-end;padding:30px}
 .door img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .door::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,20,22,0) 20%,rgba(10,20,22,.55) 55%,rgba(10,20,22,.9))}
-.door>*{position:relative;z-index:1}
+.door>*{position:relative;z-index:2}.door img{z-index:0}.door::after{z-index:1}
 .door .tag{align-self:flex-start;font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;padding:6px 12px;border-radius:999px;margin-bottom:auto}
 .door.s .tag{background:var(--skin)}.door.g .tag{background:var(--gut)}
 .door h2{font-size:34px;letter-spacing:-.03em;line-height:1.05;margin-bottom:10px}
