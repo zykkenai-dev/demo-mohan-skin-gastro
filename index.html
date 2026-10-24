@@ -36,12 +36,13 @@ h1 em{font-style:normal;color:var(--skin)}h1 span{color:var(--gut)}
 .doors{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .door{position:relative;border-radius:20px;overflow:hidden;min-height:430px;color:#fff;display:flex;flex-direction:column;justify-content:flex-end;padding:30px}
 .door img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.door::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 35%,rgba(10,20,22,.78))}
+.door::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,20,22,0) 20%,rgba(10,20,22,.55) 55%,rgba(10,20,22,.9))}
 .door>*{position:relative;z-index:1}
 .door .tag{align-self:flex-start;font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;padding:6px 12px;border-radius:999px;margin-bottom:auto}
 .door.s .tag{background:var(--skin)}.door.g .tag{background:var(--gut)}
 .door h2{font-size:34px;letter-spacing:-.03em;line-height:1.05;margin-bottom:10px}
-.door p{font-size:16px;opacity:.9;max-width:420px}
+.door p{font-size:16px;max-width:420px;color:#eef2f0}
+.door h2,.door p{text-shadow:0 1px 12px rgba(0,0,0,.35)}
 .facts{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:16px}
 .fact{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:22px 24px}
 .fact b{display:block;font-size:24px;letter-spacing:-.02em}.fact span{font-size:14px;color:var(--ink2)}
